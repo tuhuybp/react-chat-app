@@ -1,15 +1,8 @@
 import React from "react";
 import { Layout, theme } from "antd";
-import { Route, Routes } from "react-router-dom";
+import Welcome from "./Welcome";
 
 const { Content } = Layout;
-const contentStyle = {
-  textAlign: "center",
-  // minHeight: 120,
-  lineHeight: "120px",
-  // color: '#fff',
-  // backgroundColor: '#108ee9',
-};
 function ContentDetail() {
   const {
     token: { colorBgContainer },
@@ -17,13 +10,12 @@ function ContentDetail() {
 
   return (
     <Content
+      className="text-center align-middle"
       style={{
-        ...contentStyle,
         backgroundColor: colorBgContainer,
-        padding: 24,
       }}
     >
-      <p>Chat Detail</p>
+      <Welcome />
     </Content>
   );
 }

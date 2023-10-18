@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Avatar, Layout, List, Typography, Input, Space } from "antd";
-import "./index.css";
 // import {} from "@ant-design/icons";
 
 const { Sider } = Layout;
@@ -81,9 +80,7 @@ function SidebarContent() {
         renderItem={(item, index) => (
           <List.Item
             className={
-              messageActiveIndex === index
-                ? "ant-list-item-active cursor-pointer"
-                : "cursor-pointer hover:bg-gray-200"
+              messageActiveIndex === index ? "bg-blue-100" : "hover:bg-gray-200"
             }
             id={item.email}
             key={item.email}
@@ -93,6 +90,7 @@ function SidebarContent() {
               borderRadius: 8,
               marginRight: 8,
               marginLeft: 8,
+              cursor: "pointer",
             }}
             onClick={() => onClickMessage(item, index)}
           >

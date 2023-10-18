@@ -4,12 +4,16 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
+import viVI from "antd/locale/vi_VN";
+import { ConfigProvider } from "antd";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <ConfigProvider locale={viVI}>
+        <App />
+      </ConfigProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

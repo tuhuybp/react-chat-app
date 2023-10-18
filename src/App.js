@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import { Layout, theme } from "antd";
+import { Layout } from "antd";
 import Login from "./components/Login";
-import SidebarNavigation from "./components/SidebarNavigation";
-import SidebarContent from "./components/Content/Sidebar";
+import SidebarNavigation from "./components/SideBarNavigation";
+import SidebarContent from "./components/Content/SidebarLeft";
 import ContentDetail from "./components/Content/Detail";
 
 function App() {
